@@ -3,6 +3,7 @@ package net.ldanielgg.tutorialmod;
 import net.fabricmc.api.ModInitializer;
 
 import net.ldanielgg.tutorialmod.block.ModBlocks;
+import net.ldanielgg.tutorialmod.item.ModItemGroups;
 import net.ldanielgg.tutorialmod.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -15,5 +16,6 @@ public class TutorialMod implements ModInitializer {
 	public void onInitialize() {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+		ModItemGroups.registerItemGroups();
 	}
 }
